@@ -46,7 +46,7 @@ stages:
               tar -xvf infracost.tar.gz
               .\infracost.exe --version
               .\infracost.exe auth login
-              .\infracost.exe breakdown --path $(working-path) --format table
+              .\infracost.exe breakdown --path '$(System.DefaultWorkingDirectory)/Prod' --format table
             
 
         - task: TerraformTask@5
