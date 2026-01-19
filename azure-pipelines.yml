@@ -30,9 +30,9 @@ stages:
             provider: 'azurerm'
             command: 'init'
             workingDirectory: '$(working-path)'
-            backendServiceArm: 'WL_federation_identity'
+            backendServiceArm: 'wif_identity'
             backendAzureRmResourceGroupName: 'rg_Tanu'
-            backendAzureRmStorageAccountName: 'statefile123'
+            backendAzureRmStorageAccountName: 'statefile12345'
             backendAzureRmContainerName: 'statecontainer'
             backendAzureRmKey: 'prod.terraform.tfstate'
 
@@ -55,7 +55,7 @@ stages:
             provider: 'azurerm'
             command: 'plan'
             workingDirectory: '$(working-path)'
-            environmentServiceNameAzureRM: 'WL_federation_identity'
+            environmentServiceNameAzureRM: 'wif_identity'
 
 # ---------------- Stage 2: Security Scan (tfsec) ----------------
 - stage: SecurityScan
@@ -103,9 +103,9 @@ stages:
             provider: 'azurerm'
             command: 'init'
             workingDirectory: '$(working-path)'
-            backendServiceArm: 'WL_federation_identity'
+            backendServiceArm: 'wif_identity'
             backendAzureRmResourceGroupName: 'rg_Tanu'
-            backendAzureRmStorageAccountName: 'statefile123'
+            backendAzureRmStorageAccountName: 'statefile12345'
             backendAzureRmContainerName: 'statecontainer'
             backendAzureRmKey: 'prod.terraform.tfstate'
 
@@ -116,4 +116,4 @@ stages:
             command: 'apply'
             workingDirectory: '$(working-path)'
             commandOptions: '-auto-approve'
-            environmentServiceNameAzureRM: 'WL_federation_identity'
+            environmentServiceNameAzureRM: 'wif_identity'
