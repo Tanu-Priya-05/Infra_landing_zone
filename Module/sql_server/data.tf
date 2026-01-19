@@ -1,5 +1,5 @@
 data "azurerm_key_vault" "kvis" {
-  name                = "tanu-key-vault"
+  name                = "tanuvault"
   resource_group_name = "rg_Tanu"
 }
 
