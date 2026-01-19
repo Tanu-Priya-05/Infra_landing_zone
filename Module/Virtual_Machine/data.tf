@@ -10,11 +10,11 @@ data "azurerm_key_vault" "kvi" {
 }
 
 data "azurerm_key_vault_secret" "admin_login" {
-  name         = "vm-username"
+  name         = "admin-login"
   key_vault_id = data.azurerm_key_vault.kvi.id
 }
 
 data "azurerm_key_vault_secret" "admin_password" {
-  name         = "Vm-password"
+  name         = "admin-password"
   key_vault_id = data.azurerm_key_vault.kvi.id
 }

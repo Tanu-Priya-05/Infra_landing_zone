@@ -93,8 +93,8 @@ vm_x = {
     rg_name          = "rg_prod_tanu"
     vm_location      = "centralindia"
     vm_size          = "Standard_D2s_v3"
-    admin_username   = "admin_login"
-    admin_password   = "admin_password"
+    admin_username   = "admin-login"
+    admin_password   = "admin-password"
     disable_password = false
     network_interface_name = "front_nic"
 
