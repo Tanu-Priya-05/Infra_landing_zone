@@ -122,8 +122,8 @@ vm_x = {
     rg_name          = "rg_prod_tanu"
     vm_location      = "centralindia"
     vm_size          = "Standard_D2s_v3"
-    admin_username   = "admin_login"
-    admin_password   = "admin_password"
+    admin_username   = "admin-login"
+    admin_password   = "admin-password"
     disable_password = false
     network_interface_name = "back_nic"
 
@@ -155,8 +155,8 @@ sql_server_name_x ={
         rg_name = "rg_prod_tanu"
         location = "centralindia"
         sql_version = "12.0"
-        administrator_login = "sql_admin_login"
-        administrator_password = "sql_admin_password"
+        administrator_login = "sql-admin-login"
+        administrator_password = "sql-admin-password"
     }
 }
 
