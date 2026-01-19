@@ -8,7 +8,7 @@ terraform {
 
   backend "azurerm" {
     resource_group_name   = "rg_Tanu"
-    storage_account_name  = "statefile123"
+    storage_account_name  = "statefile12345"
     container_name        = "statecontainer"
     key                   = "prod.terraform.tfstate"
   }
@@ -16,5 +16,5 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "98473d5b-c639-404e-9bf2-91559fe65ff8"
+  subscription_id = "2af63522-f4cf-47c6-a535-08dbd21adcad"
 }
