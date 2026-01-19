@@ -4,11 +4,11 @@ data "azurerm_key_vault" "kvis" {
 }
 
 data "azurerm_key_vault_secret" "sql_admin_login" {
-  name         = "server-username"
+  name         = "sql-admin-login"
   key_vault_id = data.azurerm_key_vault.kvis.id
 }
 
 data "azurerm_key_vault_secret" "sql_admin_password" {
-    name        = "server-password"
+    name        = "sql-admin-password"
     key_vault_id = data.azurerm_key_vault.kvis.id
 }
