@@ -5,7 +5,7 @@ data "azurerm_network_interface" "net_front" {
   resource_group_name = each.value.rg_name
 }
 data "azurerm_key_vault" "kvi" {
-  name                = "tanu-key-vault"
+  name                = "tanuvault"
   resource_group_name = "rg_Tanu"
 }
 
