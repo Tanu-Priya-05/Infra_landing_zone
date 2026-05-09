@@ -1,4 +1,4 @@
-variable "vnet_name" {
+variable "vnet" {
     type = map(object({
         name = string
         location = string
