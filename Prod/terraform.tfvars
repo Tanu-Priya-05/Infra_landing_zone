@@ -5,15 +5,15 @@ rg_x = {
   }
 }
 
-# sa_x = {
-#   "sa1" = {
-#     name                     = "satanu"
-#     rg_name                  = "rg_prod_tanu"
-#     location                 = "centralindia"
-#     account_tier             = "Standard"
-#     account_replication_type = "LRS"
-#   }
-# }
+sa_x = {
+  "sa1" = {
+    name                     = "satanu"
+    rg_name                  = "rg_prod_tanu"
+    location                 = "centralindia"
+    account_tier             = "Standard"
+    account_replication_type = "LRS"
+  }
+}
 
 vnet_x = {
   "vnet1" = {
