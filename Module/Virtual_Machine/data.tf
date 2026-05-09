@@ -5,16 +5,16 @@ data "azurerm_network_interface" "net_front" {
   resource_group_name = each.value.rg_name
 }
 data "azurerm_key_vault" "kvi" {
-  name                = "tanu-key-vault"
+  name                = "tanuvault"
   resource_group_name = "rg_Tanu"
 }
 
 data "azurerm_key_vault_secret" "admin_login" {
-  name         = "vm-username"
+  name         = "admin-login"
   key_vault_id = data.azurerm_key_vault.kvi.id
 }
 
 data "azurerm_key_vault_secret" "admin_password" {
-  name         = "Vm-password"
+  name         = "admin-password"
   key_vault_id = data.azurerm_key_vault.kvi.id
 }
